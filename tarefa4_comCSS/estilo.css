@@ -1,18 +1,197 @@
-div{
-    border: 8px solid gray;
-    padding:50px;
+#cabecalho {
+    width: 100%;
+    height: 160px;
+
+    color: #000;
+ 
+   
+    background-image: url(Capturar.PNG);
+
+
 }
-h1{
-    text-align:right;
-    text-transform:uppercase;
-    color:orange;
+
+h1 {
+
+
+    text-transform: Brush Script MT;
+    font-size: 80px;
+    color: cornsilk;
+    
+
+    position: fixed;
+    right: 700px;
+    top: 10px;
 }
-p{
-    text-indent:90px;
-    text-align:justify;
-    letter-spacing:30px;
+h2 {
+
+
+    text-transform: Brush Script MT;
+    font-size: 50px;
+    color:#000;
+
+    position: fixed;
+   right: 400px;
+    top: 160px;
 }
-a{
-    text-decoration:none;
-    color:#008cba;
+h3 {
+
+
+    text-transform: Brush Script MT;
+    font-size: 50px;
+    color:#000;
+
+    position: fixed;
+   right: 1210.9px;;
+    top:250px;
 }
+h4 {
+
+
+    text-transform: Brush Script MT;
+    font-size: 50px;
+    color:#000;
+
+    position: fixed;
+   right: 1210.9px;;
+    top: 400px;
+}
+
+
+#menu {
+    float: left;
+    min-height: 410px;
+    width: 200px;
+
+    color: cornsilk;
+    background-image: url(parede5.jpg);
+    
+}
+
+#conteudo {
+    min-height: 410px;
+  
+   
+    background-image: url(parede5.jpg);
+    background-repeat: no-repeat;
+    margin-left: 200px;
+   
+    margin-right: 10px;
+    width: 1144px;
+
+  
+
+
+}
+#rodape{
+
+    height: 69.50px;
+    width: 100%;
+    border: #000;
+ 
+    background-image: url(borda.PNG);
+    opacity: 0.6;
+
+
+
+}
+
+
+
+ #grade{
+
+    border: 8px solid;
+    padding: 3px;
+    border-radius: 120px; 
+    width: 130px; 
+    height: 130px;
+    background: url(arte8.gif) 80px 100px;
+    margin:3px; 
+    margin-left: 200px;
+    margin-top: 130px;
+ color: #000 ;
+ 
+   
+ }
+
+ #grade1{
+
+    border: 8px solid;
+    padding: 3px;
+    border-radius: 120px; 
+    width: 130px; 
+    height: 130px;
+    background: url(arte8.gif) -47px -47px;
+    margin:3px; 
+    margin-left: 30px;
+ color: #000 ;
+ 
+   
+ }
+ #grade2{
+
+    border: 8px solid;
+    padding: 3px;
+    border-radius: 120px; 
+    width: 130px; 
+    height: 130px;
+    background: url(arte8.gif) -47px -47px;
+    margin:3px; 
+    margin-left: 30px;
+ color: #000 ;
+ }
+
+ #grade3{
+
+    border: 8px solid;
+    padding: 3px;
+    border-radius: 120px; 
+    width: 130px; 
+    height: 130px;
+    background: url(arte8.gif);
+    margin:3px; 
+    margin-left: 30px;
+ color: #000 ;
+ }
+ #divisao{
+
+    padding: 3px;
+   
+    width: 30px; 
+    height: 390px;
+ 
+    margin:3px; 
+   
+    margin-right: 800px;
+    margin-top: -280px;
+ color: #000 ;
+
+ }
+ #placa{
+
+   
+    padding: 3px;
+
+    width: 164px; 
+    height: 150px;
+   
+    background-image: url(certaplaca.png);
+    margin:3px; 
+    margin-left: 10px;
+    margin-top: 70px;
+ color: #000 ;
+ }
+
+ #placa1{
+
+   
+    padding: 3px;
+
+    width: 164px; 
+    height: 150px;
+   
+    background-image: url(certaplaca.png);
+    margin:3px; 
+    margin-left: 10px;
+    margin-top: 20px;
+
+ }
