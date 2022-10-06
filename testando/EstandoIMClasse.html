@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+
+    <script>
+
+   function cacuandoIMC() {
+            let massa = document.getElementById("massa5").value;
+            
+            console.log("Massa: " + massa);
+            let altura = document.getElementById("altura1").value;
+            console.log("Altura: " + altura);
+
+            var imc = massa/(altura**2); 
+         
+            document.getElementById("resultado9").innerHTML ="Resultado: "+imc;
+         
+
+         
+        
+        }
+   
+   
+			class imc{
+			
+		    constructor(massaO, alturaO, caluloIMCO) {
+			this.massaO = massa0;
+			this.alturaO = alturaO;
+			this.caluloIMCO = cacuandoIMCO;
+ 			
+}
+            calulando_imc(){
+			 let massaAcilia = document.getElementById("massa5").value;
+			 let alturaAcilia = document.getElementById("altura1").value;
+			
+			lef calulando_imcAcilia = massaAcilia/(this.alturaAcilia**2);
+			
+			this.massa0 = massaAcilia;
+			this.alturaO = alturaAcilia;
+			this.caluloIMCO =calulando_imcAcilia;
+			
+			 console.log(`massa:  ${this.massa0} altura: ${this.alturaO} IMC:${this.caluloIMCO} ` );
+			 
+
+}
+        cont PasandoIM
+       
+    </script>
+    <form>
+        
+        <label for="massa5">Massa: </label>
+        
+        <input type="number" id="massa5" name="massa" value><br>
+       
+        <br>
+        <label for="altura1">Altura: </label>
+        <input type="number" id="altura1" name="altura" value><br><br>
+
+
+
+
+
+
+    </form>
+
+    <button onclick="cacuandoIMC()">calculando</button>
+   
+
+    <p id="resultado9"> Resultado: </p>
+  
+    <br>
+    <p id="Etatups">TIPO: </p>
+
+
+
+</head>
+
+<body>
+   
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   function cacuandoIMC() {
+            let massa = document.getElementById("massa5").value;
+            
+            console.log("Massa: " + massa);
+            let altura = document.getElementById("altura1").value;
+            console.log("Altura: " + altura);
+
+            var imc = massa/(altura**2); 
+         
+            document.getElementById("resultado9").innerHTML ="Resultado: "+imc;
+           <p id="resultado9"> Resultado: </p>
+
+         
+         
+
+        }
+        
+   
+
+
+        
+       
+    </script>
+    <form>
+        
+        <label for="massa5">Massa: </label>
+        
+        <input type="number" id="massa5" name="massa" value><br>
+       
+        <br>
+        <label for="altura1">Altura: </label>
+        <input type="number" id="altura1" name="altura" value><br><br>
+
+
+
+
+
+
+    </form>
+
+    <button onclick="cacuandoIMC()">calculando</button>
+   
+
+    <p id="resultado9"> Resultado: </p>
+  
+    <br>
+    <p id="Etatups">TIPO: </p>
+
+
+
+</head>
+
+<body>
+   
+</body>
+
+</html>

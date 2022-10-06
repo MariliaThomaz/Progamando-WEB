@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function cacuandoIMC() {
+            let massa = document.getElementById("massa5").value;
+            //document ele  vai  ter  acesso todos docuemtos do HTML estta formualrio. 
+            // vc  conser pegar elemto pelo  id --> getElementById
+            // vc  conser pegar elemto pelo  id --> getElementById("massa5") imanado qual id pegando
+            // valeu falando quer pegar conteudo do elemto
+            console.log("Massa: " + massa);
+            let altura = document.getElementById("altura1").value;
+            console.log("Altura: " + altura);
+
+            var imc = massa/(altura**2); //caluando imc  lembrado ** é elevado
+         
+            document.getElementById("resultado9").innerHTML ="Resultado: "+imc;
+            //estou pegando elemeto reulado pelo id  isso aqui ->   <p id="resultado9"> Resultado: </p>
+
+         
+          
+
+
+
+        }
+        
+   
+
+
+        
+       
+    </script>
+    <form>
+        <!--isto é  formulario-->
+        <!--form ation="/ation_page.php ) isto é para  onde sera subimetido um dado para agum lugar "-->
+        <label for="massa5">Massa: </label>
+        <!--label é  campo  mosta  voce  digitar laber = rotulo-->
+        <!--for  é  fala de quem pertence este rotulo-->
+        <input type="number" id="massa5" name="massa" value><br>
+        <!--Aqui pegando o valor-->
+        <!--inpute ele tipo é -> pode ser texto ou  number ..-->
+        <!--inpute é  uma campo de  numero -->
+        <!-- motivo de  o  -> id tem ser  iguam for="massa" para texto ficar  perto campo-->
+        <!--name="massa" caso inteficar  pelo HTML-->
+        <!-- id e  name é  pode  ietigar no  JS -->
+        <!--  name  tipo  variavel--> 
+        <br>
+        <label for="altura1">Altura: </label>
+        <input type="number" id="altura1" name="altura" value><br><br>
+
+
+
+
+
+
+    </form>
+
+    <button onclick="cacuandoIMC()">calculando</button>
+    <!--EU ESTOU CHMANDO A FUNÇÃO-->
+
+    <p id="resultado9"> Resultado: </p>
+    <!--p id ="restado" é um deficado para  por o valor  do resulado-->
+    <br>
+    <p id="Etatups">TIPO: </p>
+
+
+
+</body>
+
+</html>

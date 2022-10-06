@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+ <script src="exploJ.js"></script> 
+</head>
+
+<body>
+<script>
+    
+function mudar() {
+   let mundo = document.getElementById("olaMundo");
+   mundo.style.color='grern';
+   mundo.innerHTML= 3;
+
+}
+function recuperaTexto(){
+
+    var textoRebe = document.getElementById("meuTexto").value;
+    var mundo = document.getElementById("olaMundo");
+    //recupando texto velho
+    mundo.innerHTML + textoRebe;
+    //atribuido valor novo para campo paragrafo
+
+    
+    }
+</script>
+ 
+        <input type="text" id="meuTexto"/> 
+    <button type="button" onclick="recuperaTexto()">Clie aqio </button>
+   <br>
+   <p id="olaMundo">ta é loca </p>
+
+
+</body>
+</html>

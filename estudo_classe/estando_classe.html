@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+</head>
+
+<body>
+
+
+    <script>
+        /*
+ // criando objeto
+ const Livro = {
+    nome: "Marilia",
+    editora: "Artes digital",
+    paginas:  177,
+    anuncio: function(){
+        console.log("Leura  do liro" + this.nome + "!")
+    }
+ }
+ Livro.anuncio()
+ */
+        /*
+        
+                // Função que agem como uma constora
+                const Livro = function (nome, editora, paginas) {
+                    gNome = nome,
+                        gEditora = editora,
+                        gPagina = paginas
+        
+                    this.getNome = function () {
+                        return gNome
+                    }
+                    this.getEditora = function () {
+                        return gEditora
+                    }
+                    this.getPaginas = function () {
+                        return gPagina
+                    }
+                    // foi  creiado lugar  funçao com a classe  recebe  obejeto
+                }
+                // vou ceia  novo livro vou passa  proedade  ele
+        
+                const Pequno_Pricipe = new Livro("Pequeno Pricipe", "Mathias", 150);
+        
+                // agor  chma a função para  mostra  o que tem dentro dela
+        
+                console.log(Pequno_Pricipe.getNome())
+                console.log(Pequno_Pricipe.getEditora())
+                console.log(Pequno_Pricipe.getPaginas())
+        */
+
+        //********************************************************
+
+        // Esploe  uando  classe
+
+        class LivroC {
+            constructor(nome, editora, paginas) {
+                this.nome = nome
+                this.editora = editora
+                this.paginas = paginas
+                //isto é constutor da classe
+            }
+
+            //tipo metoto tambem 
+            anuciarTitulo() {
+                console.log(`Titulo: ${this.nome}`)
+            }
+            descreverTitulo() {
+                console.log(` ${this.nome} é um livro da editora 
+                ${this.editora} e tem ${this.paginas} paginas`)
+            }
+        }
+
+        // herça 
+        class LivroColecao extends LivroC { //extends  que  classe  LivroColecao erder proedade da  clase LivroC
+            constructor(nome, nomeColecao) {
+                super(name)//Super  para dispobilidade  usa  nome esta lá outra classe
+                this.nomeColecao = nomeColecao
+            }
+            descreverColecao(){
+            console.log(`O livro é: ${this.nome} faz parte da coleção: ${this.nomeColecao}`);
+        }
+
+           
+        }
+
+
+        // const Estatueta = new LivroC ("Estatueta", "Silva", 210)
+        const Pequena_Cereia = new LivroColecao("Pequena sereia", "Disnay")
+
+        Pequena_Cereia.descreverColecao();
+
+       // Estatueta.anuciarTitulo()//Exibir
+      //  Estatueta.descreverTitulo()
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

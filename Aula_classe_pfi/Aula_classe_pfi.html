@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+</head>
+
+<body>
+    <script>
+            class Carro {
+                //metodo consturor
+                constructor(nome, idadeB) {
+                    this.nome = nome;//objeto
+                    this.idadeB = idadeB;
+                }
+               
+                cacluano_idade_carro() {
+                    let date = new  Date();
+
+                  var ano = date.getFullYear() - this.idadeB;
+                    console.log(`ANO:  ${this.idadeB} e idade é: ` +ano);
+                }
+                esxibindo() {
+                    console.log(`Nome do caro é:  ${this.nome}`);
+                }
+
+            }
+            const carroObjto = new Carro("Fusca", 1996);
+
+            carroObjto.cacluano_idade_carro();
+            carroObjto.esxibindo();
+
+    </script>
+
+</body>
+
+</html

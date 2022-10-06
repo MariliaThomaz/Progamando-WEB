@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- HTML  ele  não é progmação ele é  ligugem marcação-->
+
+<head>
+
+</head>
+
+
+<body>
+
+
+
+    <script>
+
+        function VerificandoValidade() {
+
+            let dataFabr = document.getElementById("dataF").value;
+            let valoranoV = document.getElementById("numeroV").value;
+           // document.write(numeroV);
+
+            var umAano = 365;
+
+            var AnosFabricado = 2022 - dataFabr;
+            console.log("valor idade do  produto: " + AnosFabricado);
+
+            var dataANosFabrica = AnosFabricado * umAano;
+            console.log("idade ano facica por  dia: " + dataANosFabrica);
+
+            var valro = valoranoV * umAano;
+            console.log("Ano estipulado validade: " + valro);
+            try {
+                if (dataANosFabrica > valro) {
+                console.log("vENSIDO");
+                document.getElementById("resultado1").innerHTML = "Resultado: Vencido";
+
+            }
+            if (dataANosFabrica <= valro) {
+                console.log("Dentro da  validade");
+                document.getElementById("resultado1").innerHTML = "Resultado: Dentro Vailidade";
+            }
+
+
+            document.getElementById("resultado2").innerHTML = "Resultado: Ano facação: " + dataFabr;
+            document.getElementById("resultado3").innerHTML = "Resultado:Numeo de anos a venciemto: " + valoranoV;
+
+            let NomeDoPro = document.getElementById("nomeP").value;
+            document.getElementById("resultado4").innerHTML = "Nome do Produto: " + NomeDoPro;
+
+
+            let precoUni = document.getElementById("PrecoU").value;
+            document.getElementById("resultado4").innerHTML = "Resultado: Valor Unidade: " + precoUni;
+
+            let precoVend = document.getElementById("PrecoV").value;
+            document.getElementById("resultado5").innerHTML = "Resultado: Valor Venda: " + precoVend;
+
+
+            }
+            catch(err){
+                    message.innerHTML ="ERRP"+ err;
+            }
+
+            
+
+        }
+
+
+
+    </script>
+    <form>
+        <p>
+            <label for="nomeP">Nome: </label>
+
+        </p>
+        <p>
+            <input type="text" id="nomeP" name="nome" value><br>
+        </p>
+ 
+        <!--*************************************************************************************** -->
+
+        <p>
+            <label for="dataF">Ano da Fabricate: </label>
+
+        </p>
+        <p>
+            <input type="text" id="dataF" name="dataF" value><br>
+        </p>
+
+        <!--*************************************************************************************** -->
+        <p>
+            <label for="numeroV">Numeo de anos a venciemto: </label>
+
+        </p>
+        <p>
+            <input type="number" id="numeroV" name="numero" value><br>
+        </p>
+
+        <!--*************************************************************************************** -->
+        <p>
+            <label for="PrecoU">Preço unidade: </label>
+
+        </p>
+        <p>
+            <input type="number" id="PrecoU" name="PrecoU" value><br>
+        </p>
+
+        <!--*************************************************************************************** -->
+        <p>
+            <label for="PrecoV">Preço vendo: </label>
+
+        </p>
+        <p>
+            <input type="number" id="PrecoV" name="PrecoV" value><br>
+        </p>
+
+
+
+
+
+    </form>
+
+    <button onclick="VerificandoValidade()">Gravar</button>
+  
+
+    <!--EU ESTOU CHMANDO A FUNÇÃO-->
+
+    <p id="resultado1"> Resultado: </p>
+    <p id="resultado2"> Resultado: </p>
+    <p id="resultado3"> Resultado: </p>
+    <p id="resultado4"> Resultado: </p>
+    <p id="resultado5"> Resultado: </p>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
